@@ -9,17 +9,17 @@ const BookingCard = (props) => {
                 <div className={styles.bookingCard}>
                     <div className={styles.bookingPictire}>
                         <Image
-                            src={props.photo}
+                            src={props.src}
                             alt={props.model}
-                            width={100}
+                            width={130}
                             height={100}
                             object-fit="contain"
                         />
                     </div>
                     <div className={styles.bookingInfo}>
                         <div className={styles.bookingItem}>Model: {props.brand}{props.model}</div>
-                        <div>Location:{props.start_location}</div>
-                        <div>Price:{props.price}</div>
+                        <div>Location: {props.location}</div>
+                        <div>Price: {props.price} Euro per km</div>
                     </div>
                 </div>
         </>
