@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import { carLanding } from "../public/images/carLanding.jpg";
+import CarLanding from "../public/images/carLanding.jpg";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "reactstrap";
@@ -18,14 +18,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>Hello</div>
-        <Image
-          src="/public/images/carLanding.jpg"
-          alt="Picture of the car"
-          width={500}
-          height={500}
-          object-fit="contain"
-        />
+        <div className={styles.backImg}>
+          <Image
+            src={CarLanding}
+            alt="Picture of the car"
+            height={400}
+            responsive
+          />
+        </div>
         <div>
           <Container>
             <Row>
@@ -36,7 +36,7 @@ export default function Home() {
                   </h2>
                 </div>
               </Col>
-              <Col lg="8" md="10" sm="12">
+              <Col lg="8" md="12" sm="12">
                 <SearchCarForm />
               </Col>
             </Row>
