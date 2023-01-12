@@ -10,7 +10,7 @@ const SearchCarForm = () => {
           <input type="text" placeholder="start location" required />
         </FormGroup>
         <FormGroup className={styles.form_group}>
-          <input type="text" placeholder="return location" required />
+          <input type="text" placeholder="end location" required />
         </FormGroup>
         <FormGroup className={styles.form_group}>
           <input className={styles.pick_up_date} type="date" required />
