@@ -11,9 +11,11 @@ specifiers:
   eslint-config-next: 13.1.1
   next: 13.1.1
   next-auth: ^4.18.8
+  nodemailer: ^6.9.0
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.7.1
   swr: ^2.0.0
   tailwindcss: ^3.2.4
 
@@ -26,9 +28,11 @@ dependencies:
   eslint: 8.31.0
   eslint-config-next: 13.1.1_eslint@8.31.0
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
-  next-auth: 4.18.8_q76c2b4vyoegvsbrcwkfvimnai
+  next-auth: 4.18.8_5c5gjds27eda56zlahldgx35pi
+  nodemailer: 6.9.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.7.1_react@18.2.0
   swr: 2.0.0_react@18.2.0
 
 devDependencies:
@@ -858,7 +862,7 @@ packages:
     dependencies:
       '@aws-sdk/client-dynamodb': 3.245.0
       '@aws-sdk/lib-dynamodb': 3.245.0_krwxgtwn55yyka2nfkkqmuvuti
-      next-auth: 4.18.8_q76c2b4vyoegvsbrcwkfvimnai
+      next-auth: 4.18.8_5c5gjds27eda56zlahldgx35pi
     dev: false
 
   /@next/env/13.1.1:
@@ -2522,7 +2526,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next-auth/4.18.8_q76c2b4vyoegvsbrcwkfvimnai:
+  /next-auth/4.18.8_5c5gjds27eda56zlahldgx35pi:
     resolution: {integrity: sha512-USP8ihmvB7iCGtkS0+toe2QPrzdbZfkydQZX56JOI9Ft5n/BardOXh3D4wQ2An+vpq/jDKojGlgfv21wVElW7A==}
     engines: {node: ^12.19.0 || ^14.15.0 || ^16.13.0 || ^18.12.0}
     peerDependencies:
@@ -2539,6 +2543,7 @@ packages:
       cookie: 0.5.0
       jose: 4.11.2
       next: 13.1.1_biqbaboplfbrettd7655fr4n2y
+      nodemailer: 6.9.0
       oauth: 0.9.15
       openid-client: 5.3.1
       preact: 10.11.3
@@ -2595,6 +2600,11 @@ packages:
   /node-releases/2.0.8:
     resolution: {integrity: sha512-dFSmB8fFHEH/s81Xi+Y/15DQY6VHW81nXRj86EMSL3lmuTmK1e+aT4wrFCkTbm+gSwkw4KpX+rT/pMM2c1mF+A==}
     dev: true
+
+  /nodemailer/6.9.0:
+    resolution: {integrity: sha512-jFaCEGTeT3E/m/5R2MHWiyQH3pSARECRUDM+1hokOYc3lQAAG7ASuy+2jIsYVf+RVa9zePopSQwKNVFH8DKUpA==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -2927,6 +2937,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.7.1_react@18.2.0:
+    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
