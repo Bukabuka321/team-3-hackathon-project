@@ -1,10 +1,12 @@
-import Head from 'next/head';
-import { Inter } from '@next/font/google';
-import styles from '../styles/Home.module.css';
-import {carLanding} from "../public/images/carLanding.jpg";
-import Image from 'next/image';
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
+import { carLanding } from "../public/images/carLanding.jpg";
+import Image from "next/image";
+import "bootstrap/dist/css/bootstrap.css";
+import { Container, Row, Col } from "reactstrap";
+import SearchCarForm from "../components/searchCarForm";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -16,16 +18,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <div>Hello</div> 
-      <Image
+        <div>Hello</div>
+        <Image
           src="/public/images/carLanding.jpg"
           alt="Picture of the car"
           width={500}
           height={500}
-          object-fit="contain" 
-          /> 
-          <div>Card with options</div>
+          object-fit="contain"
+        />
+        <div>
+          <Container>
+            <Row>
+              <Col lg="4" md="10" sm="12">
+                <div>
+                  <h2 className={styles.search_form_title}>
+                    Find the best car for you now
+                  </h2>
+                </div>
+              </Col>
+              <Col lg="8" md="10" sm="12">
+                <SearchCarForm />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </main>
     </>
-  )
+  );
 }
