@@ -6,7 +6,7 @@ const AddVehicleCard = () => {
     return (
         <>
             <div className={styles.main}>
-                <h3 style={{ fontWeight: "400" }}> Add a new vehicle </h3>
+                <h3 style={{ fontWeight: "400", fontSize: "1.2em" }}> Add a new vehicle </h3>
                     <VehicleInfoForm />
                 <button className={styles.addBtn} type="submit" value="Submit">Add</button>
             </div>

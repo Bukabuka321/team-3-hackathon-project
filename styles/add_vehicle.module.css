@@ -25,6 +25,7 @@
 .infoRow {
     display: flex;
     flex-direction: row;
+    font-size: 0.9em;
     width: 90%;
     gap: 10px;
     justify-content: flex-start;
@@ -38,6 +39,7 @@
 .itemValue {
     display: flex;
     background-color: white;
+    font-size: 0.8em;
     border-radius: 10px;
     border-width: 1px;
     padding-left: 6px;
@@ -47,6 +49,7 @@
 .addBtn {
     background-color: rgba(23, 32, 240, 1);
     color: white; 
+    font-size: 0.8em;
     border-radius: 10px;
     border-width: 1px;
     height: 25px;
@@ -59,6 +62,7 @@
 .deleteBtn {
     background-color: rgba(23, 32, 240, 1);
     color: white;
+    font-size: 0.8em;
     border-radius: 10px;
     border-width: 1px;
     height: 25px;

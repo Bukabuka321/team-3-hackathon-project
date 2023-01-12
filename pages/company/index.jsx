@@ -14,8 +14,8 @@ export default function CompanyPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <h3 style={{ fontWeight: "400" }}>Hello, Company name! </h3>
-                <h4 style={{ fontWeight: "400" }}>Welcome to the personal cabinet.</h4>
+                <h3 style={{ fontWeight: "400", fontSize:"1.2em" }}>Hello, Company name! </h3>
+                <h4 style={{ fontWeight: "400", fontSize: "1em" }}>Welcome to the personal cabinet.</h4>
                 <div className={styles.topBtns}>
                     <button className={styles.btn}>Check vehicles</button>
                     <button className={styles.btn}>Check bookings</button>
