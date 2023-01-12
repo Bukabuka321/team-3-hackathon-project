@@ -1,6 +1,7 @@
 import Head from "next/head";
 import AddVehicleCard from "../../components/addVehicleCard";
 import EditVehicleCard from "../../components/editVehicleCard";
+import Reviews from "../../components/reviews";
 import styles from "../../styles/CompanyPage.module.css";
 
 export default function CompanyPage() {
@@ -24,6 +25,7 @@ export default function CompanyPage() {
                     <AddVehicleCard />
                     <EditVehicleCard />
                 </div>
+                <Reviews />
             </main>
         </>
 
