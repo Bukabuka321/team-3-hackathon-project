@@ -14,13 +14,18 @@
   margin-top: 50px;
   padding: 0;
 }
+
 .search_form_title {
   font-size: 1.2em;
   color: #00416a;
   margin: 0;
   margin-bottom: 10px;
 }
-
+.desc {
+  display: block;
+  align-self: flex-start;
+  margin-left: 20px;
+}
 .description {
   display: inherit;
   justify-content: inherit;
