@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/BookingsPage.module.css";
 import BookingCard from "../../components/bookingCard";
+import fakeBooking from "../../fakeBooking";
 
 export default function BookingsPage() {
     return (
@@ -12,7 +13,23 @@ export default function BookingsPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <BookingCard />
+                <h3 style={{ fontWeight: "400", textalign: "center"}}>My bookings</h3>
+
+                {fakeBooking.map(singleBooking => {
+                    return (
+                <div className={styles.singleBooking}>
+                <div style={{justifySelf: "flex-start" }}>Date: {singleBooking.date} </div>
+                <BookingCard 
+                key={singleBooking.id}
+                model={singleBooking.model}
+                location={singleBooking.start_location}
+                price={singleBooking.price}
+                src={singleBooking.photo}
+                />
+                </div>
+                    )
+                })}
+
             </main>
         </>
 
