@@ -130,11 +130,27 @@ footer {
   width: 100%;
   position: sticky;
   top: 100vh;
-  background-color: rgb(15, 18, 104);
+  background-color: #00416a;
   color: white;
   justify-content: center;
 }
-
+.text_footer {
+  font-size: 0.8rem;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 1rem;
+}
+.link_footer {
+  color: white;
+  font-size: 0.6rem;
+}
+.footer_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 4px;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
