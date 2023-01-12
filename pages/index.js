@@ -18,6 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
         <div>
           <h1>
             RENT&GO <br />
@@ -43,7 +44,7 @@ export default function Home() {
                   </h2>
                 </div>
               </Col>
-              <Col lg="8" md="12" sm="12">
+              <Col lg="8" md="10" sm="12">
                 <SearchCarForm />
               </Col>
             </Row>
