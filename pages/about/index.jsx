@@ -21,7 +21,9 @@ export default function AboutUsPage() {
                 <div className={styles.features}>
                     <h3 style={{ fontWeight: "400" }}> Our features</h3>
                     <ul>
+                        <Link className={styles.link} href="/vehicles">
                         <li>Wide range of vehicles</li>
+                        </Link>
                         <li>Fair prices</li>
                         <Link className={styles.link} href="/bookings">
                         <li>Personal user cabinet</li>
