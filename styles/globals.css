@@ -100,33 +100,6 @@ a {
   text-decoration: none;
 }
 
-.header_nav {
-  background-color: rgb(15, 18, 104);
-  color: white;
-  width: 100%;
-}
-
-.header_list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.item_header {
-  display: flex;
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  position: sticky;
-  top: 100vh;
-  background-color: rgb(15, 18, 104);
-  color: white; 
-  justify-content: center;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
