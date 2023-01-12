@@ -12,22 +12,58 @@
   min-width: 400px;
 }
 
+.shortForm {
+  display: flex;
+  justify-content: center;
+}
+
+.search_form_short {
+  display: flex;
+  flex-direction: column;
+  border: 1px #00416a;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #00416a;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  min-width: 300px;
+  gap: 5px;
+  width: 85%;
+}
+
+.topForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.bottomForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .form_group {
   width: 40%;
 }
+
 .pick_up_date::before {
   content: "pick up";
   margin-right: 0.2rem;
   color: #29333c;
 }
+
 .return_date::before {
   content: "return";
   margin-right: 0.3rem;
   color: #7c8a97;
 }
+
 .form_group input::placeholder {
   color: #7c8a97;
 }
+
 .form_group input {
   border-radius: 10px;
   border: 0.1px solid #7c8a97;
@@ -49,13 +85,16 @@
   border-radius: 20px;
   align-self: center;
 }
+
 .find_car_btn:hover {
   background-color: #02578b;
 }
+
 @media (max-width: 500px) {
   .search_form {
     min-width: 200px;
   }
+
   .form_group {
     width: 100%;
   }
