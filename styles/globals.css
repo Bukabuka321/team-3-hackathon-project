@@ -135,14 +135,14 @@ footer {
   justify-content: center;
 }
 .text_footer {
-  font-size: 0.8rem;
+  font-size: 0.6em;
   margin: 0;
   padding-bottom: 5px;
-  padding-left: 1rem;
+  text-align: center;
 }
 .link_footer {
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.8em;
 }
 .footer_list {
   display: flex;
