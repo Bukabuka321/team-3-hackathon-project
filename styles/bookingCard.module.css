@@ -24,7 +24,6 @@
 .bookingInfo {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
     gap: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -36,6 +35,37 @@
     width: 100%;
 }
 
+.bookingInfoBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    gap: 20px;
+}
+
 .bookingItem {
     color: black;
+}
+
+.bookingReviewBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+    background-color: rgba(23, 32, 240, 1);
+    color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 25px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
