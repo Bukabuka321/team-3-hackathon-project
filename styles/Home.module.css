@@ -3,15 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  margin: 0;
-
+  padding: 6rem;
   min-height: 100vh;
-}
-.search_form_title {
-  font-size: 1.2em;
-  color: #00416a;
-  margin-top: 50px;
 }
 
 .description {
@@ -104,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: "";
+  content: '';
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -132,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
 }
@@ -184,9 +177,6 @@
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
-  }
-  .search_form_title {
-    font-size: 0.9em;
   }
 
   .grid {
