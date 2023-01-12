@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.about {
+    display: flex;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.features > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+}
+
+.link {
+    color: #00416a;
+}
