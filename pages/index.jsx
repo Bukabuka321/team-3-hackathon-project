@@ -18,18 +18,26 @@ export default function Home() {
     <>
       <main>
         {session ? (
-          <div className="flex flex-col ">
-            <p className="text-green-400 underline w-40">
-              Sign in as {session.user.name} {session.user.email}
+          <div className="flex w-screen h-screen flex-col items-center justify-center">
+            <p className="w-4/12 text-center">
+              Signed in as {session.user.name} {session.user.email}
             </p>
-            <button className="w-40" onClick={handleSignOut}>
+            <button
+              className="w-20 border-2 rounded-lg border-solid bg-blue-600"
+              onClick={handleSignOut}
+            >
               Sign out
             </button>
           </div>
         ) : (
-          <div className="w-screen h-screen">
-            <p className={"text-green-400 underline"}>Not sign in</p>
-            <button onClick={handleSignIn}>Sign in now!</button>
+          <div className="flex w-screen h-screen flex-col items-center justify-center">
+            <p className="w-4/12 text-center">Not sign in</p>
+            <button
+              className="w-36 border-2 rounded-lg border-solid bg-blue-600"
+              onClick={handleSignIn}
+            >
+              Sign in now!
+            </button>
           </div>
         )}
       </main>
