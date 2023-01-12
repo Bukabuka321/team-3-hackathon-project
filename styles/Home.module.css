@@ -17,7 +17,8 @@
 .search_form_title {
   font-size: 1.2em;
   color: #00416a;
-  margin-top: 50px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .description {

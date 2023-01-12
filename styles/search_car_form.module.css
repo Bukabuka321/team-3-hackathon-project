@@ -10,6 +10,7 @@
   margin: 0;
   margin-bottom: 50px;
   min-width: 400px;
+  max-width: 800px;
 }
 
 .form_group {
