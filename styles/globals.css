@@ -101,13 +101,24 @@ a {
 }
 
 .header_nav {
+
   background-color: rgb(15, 18, 104);
   color: white;
   width: 100%;
  display: flex;
   justify-content: space-between;
 }
-
+.header_nav li {
+  color: white;
+  background-color: white;
+}
+.link_header {
+  color: #00416a;
+}
+ul.header_list {
+  align-items: center;
+  margin: 0;
+}
 .header_list {
   display: flex;
   flex-direction: row;
