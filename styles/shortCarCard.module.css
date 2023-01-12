@@ -11,7 +11,9 @@
   margin-bottom: 20px;
   max-width: 450px;
 }
-
+.link_btn {
+  color: #fff;
+}
 .card_car_btn {
   display: block;
   background-color: #00416a;

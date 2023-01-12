@@ -38,7 +38,9 @@
   font-size: 0.8rem;
   min-width: 137px;
 }
-
+.link_btn {
+  color: #fff;
+}
 .find_car_btn {
   display: block;
   margin-left: auto;
@@ -53,6 +55,7 @@
 .find_car_btn:hover {
   background-color: #02578b;
 }
+
 @media (max-width: 500px) {
   .search_form {
     min-width: 200px;

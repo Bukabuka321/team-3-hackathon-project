@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Form, FormGroup } from "reactstrap";
 import styles from "../styles/shortCarCard.module.css";
-
+import Link from "next/link";
 const ShortCarCard = () => {
   //add "props" as a parametr of function
+  //const {id}=params.vehicle
   //const { brand, model, transmission, power, price, photo } = props.vehicle;
+  const id = "1";
   const brand = "BMW";
   const model = "B3";
   const transmission = "automat";
@@ -35,10 +37,18 @@ const ShortCarCard = () => {
             <div className={styles.btn_cont}>
               <Form>
                 <FormGroup className={styles.form_group}>
-                  <button className={styles.card_car_btn}>Detail</button>
+                  <button className={styles.card_car_btn}>
+                    <Link className={styles.link_btn} href={`/vehicles/${id}`}>
+                      Detail
+                    </Link>
+                  </button>
                 </FormGroup>
                 <FormGroup className={styles.form_group}>
-                  <button className={styles.card_car_btn}>Book now</button>
+                  <button className={styles.card_car_btn}>
+                    <Link className={styles.link_btn} href="/vehicles">
+                      Book now
+                    </Link>
+                  </button>
                 </FormGroup>
               </Form>
             </div>
