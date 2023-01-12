@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../../styles/VehiclesPage.module.css";
 import SearchFormShort from "../../components/searchFormShort";
+import Reviews from "../../components/reviews";
 
 export default function VehiclesPage() {
     return (
@@ -23,6 +24,7 @@ export default function VehiclesPage() {
                 {/*
                  <ShortCarCard />
                 */}
+                <Reviews />
             </main>
         </>
 

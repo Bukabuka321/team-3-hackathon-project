@@ -19,6 +19,9 @@ const SearchFormShort = () => {
                     <input className={styles.return_date} type="date" required />
                 </FormGroup>
                 </div>
+                <FormGroup className={styles.form_group}>
+                    <button className={styles.short_find_car_btn}>Search</button>
+                </FormGroup>
             </div>
         </Form>
     );
