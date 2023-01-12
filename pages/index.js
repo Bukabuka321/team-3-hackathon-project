@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import CarLanding from "../public/images/carLanding.jpg";
+import CarLanding from "../public/images/carLanding.png";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "reactstrap";
@@ -18,12 +18,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div>
+          <h1>
+            RENT&GO <br />
+            <br />
+            Easy cars’ rent with us. Let’s start!
+          </h1>
+        </div>
         <div className={styles.backImg}>
           <Image
             src={CarLanding}
             alt="Picture of the car"
             height={400}
-            responsive
+            responsive={true}
           />
         </div>
         <div>

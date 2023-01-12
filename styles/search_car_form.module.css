@@ -7,7 +7,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px #00416a;
   padding: 20px 20px;
-  margin: 5px 0 50px 0;
+  margin: 0;
   min-width: 400px;
 }
 
@@ -17,7 +17,7 @@
 .pick_up_date::before {
   content: "pick up";
   margin-right: 0.2rem;
-  color: #7c8a97;
+  color: #29333c;
 }
 .return_date::before {
   content: "return";
