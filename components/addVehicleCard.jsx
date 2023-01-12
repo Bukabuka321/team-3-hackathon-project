@@ -45,7 +45,7 @@ const AddVehicleCard = () => {
                     </label>
                     <label className={styles.infoRow}>
                         Photo:
-                        <input className={styles.itemValue} type="text" name="name" placeholder="" />
+                        <input className={styles.itemValue} type="text" name="name" placeholder="add link here" />
                     </label>
                     <label className={styles.infoRow}>
                         Location:
