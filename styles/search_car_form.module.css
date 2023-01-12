@@ -17,7 +17,7 @@
 .pick_up_date::before {
   content: "pick up";
   margin-right: 0.2rem;
-  color: #7c8a97;
+  color: #29333c;
 }
 .return_date::before {
   content: "return";
