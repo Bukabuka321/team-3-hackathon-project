@@ -5,7 +5,7 @@ import reviews from "../reviews.js";
 const Reviews = (props) => {
     return (
         <>
-            <h3 style={{ fontWeight: "400" }}>Reviews</h3>
+            <h3 style={{ fontWeight: "400", fontSize:"1.2em" }}>Reviews</h3>
             <div className={styles.reviews}>
                 {reviews.map(review => {
                     return (

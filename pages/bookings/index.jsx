@@ -13,7 +13,7 @@ export default function BookingsPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <h3 style={{ fontWeight: "400", textalign: "center"}}>My bookings</h3>
+                <h3 style={{ fontWeight: "400", fontSize:"1.2em"}}>My bookings</h3>
 
                 {fakeBooking.map(singleBooking => {
                     return (

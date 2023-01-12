@@ -7,7 +7,7 @@ const EditVehicleCard = () => {
         <>
             <div className={styles.main}>
                 <div className={styles.top}>
-                    <h3 style={{ fontWeight: "400" }}> Edit a vehicle </h3>
+                    <h3 style={{ fontWeight: "400", fontSize: "1.2em" }}> Edit a vehicle </h3>
                     <button className={styles.deleteBtn} type="submit" value="Submit">Delete vehicle</button>
                 </div>
                 <VehicleInfoForm />
