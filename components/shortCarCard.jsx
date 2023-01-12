@@ -2,41 +2,50 @@ import React from "react";
 import { Container, Row, Col, Form, FormGroup } from "reactstrap";
 import styles from "../styles/shortCarCard.module.css";
 
-const ShortCarCard = (props) => {
-  const { brand, model, transmission, power, price, photo } = props.vehicle;
-  return;
-  <div>
-    <Container>
-      <Row>
-        <Col lg="6" md="6" sm="12">
-          <div className={styles.vehicle_img}>
-            <img src={photo} alt="" />
-          </div>
-        </Col>
-        <Col lg="6" md="6" sm="12">
-          <div className={styles.vehicle_title}>
-            <h1>
-              {brand} {model}
-            </h1>
-          </div>
-          <div className={styles.vehicle_desc}>
-            <h2>{transmission}</h2>
-            <h2>{power}</h2>
-            <h2>{price} Euro/km</h2>
-          </div>
-        </Col>
-        <Col>
-          <Form>
-            <FormGroup className={styles.form_group}>
-              <button className={styles.card_car_btn}>Detail</button>
-            </FormGroup>
-            <FormGroup className={styles.form_group}>
-              <button className={styles.card_car_btn}>Book now</button>
-            </FormGroup>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
-  </div>;
+const ShortCarCard = () => {
+  //add "props" as a parametr of function
+  //const { brand, model, transmission, power, price, photo } = props.vehicle;
+  const brand = "BMW";
+  const model = "B3";
+  const transmission = "automat";
+  const power = "diesel";
+  const price = "12";
+  const photo =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeS7vLnSDGMcfS27Adm_KIo7bMVT1xR4lvGCJA2oWPpeZ0c8Il_p6vFgJ5jz84QUFhd1g&usqp=CAU";
+  return (
+    <div className={styles.vehicle_card}>
+      <Container>
+        <Row>
+          <Col>
+            <div className={styles.vehicle_img}>
+              <img src={photo} alt="" />
+            </div>
+          </Col>
+          <Col>
+            <div className={styles.vehicle_title}>
+              <h1>
+                {brand} {model}
+              </h1>
+            </div>
+            <div className={styles.vehicle_inform}>
+              <h2>{transmission}</h2>
+              <h2>{power}</h2>
+              <h2>{price} Euro/km</h2>
+            </div>
+            <div className={styles.btn_cont}>
+              <Form>
+                <FormGroup className={styles.form_group}>
+                  <button className={styles.card_car_btn}>Detail</button>
+                </FormGroup>
+                <FormGroup className={styles.form_group}>
+                  <button className={styles.card_car_btn}>Book now</button>
+                </FormGroup>
+              </Form>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 };
 export default ShortCarCard;

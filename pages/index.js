@@ -6,6 +6,7 @@ import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container, Row, Col } from "reactstrap";
 import SearchCarForm from "../components/searchCarForm";
+import ShortCarCard from "../components/shortCarCard";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
             src={CarLanding}
             alt="Picture of the car"
             height={400}
-            responsive={true}
+            responsive="true"
           />
         </div>
         <div>
@@ -49,6 +50,8 @@ export default function Home() {
             </Row>
           </Container>
         </div>
+        <h2>Best offers (demo card)</h2>
+        <ShortCarCard />
       </main>
     </>
   );
