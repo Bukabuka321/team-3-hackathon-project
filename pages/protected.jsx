@@ -1,8 +1,19 @@
 import { getSession, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Protected = () => {
-  const { data: session, status } = useSession();
+  const { push } = useRouter();
+  const { data: session, status } = useSession({
+    required: true,
+    onUnauthenticated: () => {
+      push("/auth/signin");
+    },
+  });
+
+  if (status === "loading") {
+    return <h1>Loading....</h1>;
+  }
 
   if (session === null || session === undefined) {
     return (
