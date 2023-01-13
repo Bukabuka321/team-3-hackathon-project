@@ -1,0 +1,79 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 1);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    gap: 6px;
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+}
+
+.itemValue {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-left: 6px;
+}
+
+
+.addBtn {
+    background-color: rgba(23, 32, 240, 1);
+    color: white; 
+    border-radius: 10px;
+    border-width: 1px;
+    height: 25px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.deleteBtn {
+    background-color: rgba(23, 32, 240, 1);
+    color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 25px;
+    width: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    margin-left: 60px;
+}

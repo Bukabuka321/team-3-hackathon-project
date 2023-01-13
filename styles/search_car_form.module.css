@@ -1,0 +1,62 @@
+.search_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px #00416a;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #00416a;
+  padding: 20px 20px;
+  margin: 0;
+  margin-bottom: 50px;
+  min-width: 400px;
+}
+
+.form_group {
+  width: 40%;
+}
+.pick_up_date::before {
+  content: "pick up";
+  margin-right: 0.2rem;
+  color: #29333c;
+}
+.return_date::before {
+  content: "return";
+  margin-right: 0.3rem;
+  color: #7c8a97;
+}
+.form_group input::placeholder {
+  color: #7c8a97;
+}
+.form_group input {
+  border-radius: 10px;
+  border: 0.1px solid #7c8a97;
+  padding: 8px 10px;
+  width: 100%;
+  outline: none;
+  font-size: 0.8rem;
+  min-width: 137px;
+}
+
+.find_car_btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00416a;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.4rem 2rem;
+  border-radius: 20px;
+  align-self: center;
+}
+.find_car_btn:hover {
+  background-color: #02578b;
+}
+@media (max-width: 500px) {
+  .search_form {
+    min-width: 200px;
+  }
+  .form_group {
+    width: 100%;
+  }
+}

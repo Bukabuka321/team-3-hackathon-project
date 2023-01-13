@@ -100,6 +100,46 @@ a {
   text-decoration: none;
 }
 
+.header_nav {
+
+  background-color: rgb(15, 18, 104);
+  color: white;
+  width: 100%;
+ display: flex;
+  justify-content: space-between;
+}
+.header_nav li {
+  color: white;
+  background-color: white;
+}
+.link_header {
+  color: #00416a;
+}
+ul.header_list {
+  align-items: center;
+  margin: 0;
+}
+.header_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item_header {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  position: sticky;
+  top: 100vh;
+  background-color: rgb(15, 18, 104);
+  color: white; 
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
