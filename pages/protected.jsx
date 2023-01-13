@@ -9,6 +9,7 @@ const Protected = () => {
         <h1>Protected!</h1>
       </div>
     );
+  return { session };
 };
 
 export const getSereverSideProps = async (ctx) => {

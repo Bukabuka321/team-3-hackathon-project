@@ -1,5 +1,4 @@
 import { signIn, useSession } from "next-auth/react";
-import redirect from "next/dist/server/api-utils";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { BsGithub, BsTwitter, BsGoogle } from "react-icons/bs";
@@ -24,7 +23,13 @@ const Signin = () => {
     setTimeout(() => {
       push("/");
     }, 3000);
-    return <p>You are alredy signed in! Redirecting </p>;
+    return (
+      <div className="flex w-screen h-screen flex-col items-center justify-center">
+        <p>
+          You are alredy signed in! Redirecting to the main page in 3 seconds...
+        </p>
+      </div>
+    );
   }
 
   const handleOAuthSignIn = (provider) => () => {

@@ -7,22 +7,22 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import TwitterProvider from "next-auth/providers/twitter";
 
-// const config = {
-//   credentials: {
-//     accessKeyId: process.env.NEXT_AUTH_AWS_ACCESS_KEY_ID,
-//     secretAccessKey: process.env.NEXT_AUTH_AWS_SECRET_KEY,
-//   },
-//   region: process.env.NEXT_AUTH_AWS_REGION,
-// };
+const config = {
+  credentials: {
+    accessKeyId: process.env.NEXT_AUTH_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.NEXT_AUTH_AWS_SECRET_KEY,
+    sessionToken: process.env.AWS_SESSION_TOKEN,
+  },
+  region: process.env.NEXT_AUTH_AWS_REGION,
+};
 
-// const client = DynamoDBDocument.from(new DynamoDB(config), {
-//   marshallOptions: {
-//     convertEmptyValues: true,
-//     removeUndefinedValues: true,
-//     convertClassInstanceToMap: true,
-//     tableName: "Auth",
-//   },
-// });
+const client = DynamoDBDocument.from(new DynamoDB(config), {
+  marshallOptions: {
+    convertEmptyValues: true,
+    removeUndefinedValues: true,
+    convertClassInstanceToMap: true,
+  },
+});
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -34,11 +34,23 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    }),
-    TwitterProvider({
-      clientId: process.env.TWITTER_CLIENT_ID,
-      clientSecret: process.env.TWITTER_CLIENT_SECRET,
-      version: "2.0", // opt-in to Twitter OAuth 2.0
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
+      callbacks: {
+        async signIn({ account, profile }) {
+          if (account.provider === "google") {
+            return (
+              profile.email_verified && profile.email.endsWith("@example.com")
+            );
+          }
+          return true; // Do different verification for other providers that don't have `email_verified`
+        },
+      },
     }),
     // EmailProvider({
     //   server: {
@@ -56,7 +68,7 @@ export const authOptions = {
   pages: {
     signIn: "/auth/signin",
   },
-  // adapter: DynamoDBAdapter(client),
+  adapter: DynamoDBAdapter(client),
 };
 
 export default NextAuth(authOptions);
