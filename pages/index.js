@@ -31,7 +31,7 @@ export default function Home() {
             src={CarLanding}
             alt="Picture of the car"
             height={400}
-            responsive={true}
+            responsive
           />
         </div>
         <div>

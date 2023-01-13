@@ -58,13 +58,11 @@
 .form_group {
   width: 40%;
 }
-
 .pick_up_date::before {
   content: "pick up";
   margin-right: 0.2rem;
-  color: #29333c;
+  color: #7c8a97;
 }
-
 .return_date::before {
   content: "return";
   margin-right: 0.3rem;
