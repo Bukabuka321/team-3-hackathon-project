@@ -18,7 +18,7 @@ const BookingCard = (props) => {
                 </div>
                 <div className={styles.bookingInfoBox}>
                     <div className={styles.bookingInfo}>
-                        <div className={styles.bookingItem}>Model: {props.brand}{props.model}</div>
+                        <div className={styles.bookingItem}>Model: {props.brand} {props.model}</div>
                         <div>Location: {props.location}</div>
                         <div>Price: {props.price} Euro per km</div>
                     </div>

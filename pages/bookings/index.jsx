@@ -22,6 +22,7 @@ export default function BookingsPage() {
                 <BookingCard 
                 key={singleBooking.id}
                 model={singleBooking.model}
+                brand={singleBooking.brand}
                 location={singleBooking.start_location}
                 price={singleBooking.price}
                 src={singleBooking.photo}
