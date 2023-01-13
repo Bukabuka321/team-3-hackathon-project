@@ -10,6 +10,7 @@
   margin: 0;
   margin-bottom: 50px;
   min-width: 400px;
+  max-width: 800px;
 }
 
 .shortForm {
@@ -82,7 +83,9 @@
   font-size: 0.8rem;
   min-width: 137px;
 }
-
+.link_btn {
+  color: #fff;
+}
 .find_car_btn {
   display: block;
   margin-left: auto;

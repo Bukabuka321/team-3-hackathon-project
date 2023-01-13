@@ -127,20 +127,28 @@ footer {
   --top: 100vh;
   position: sticky;
   top: 100vh;
-  background-color: rgb(15, 18, 104);
+  background-color: #00416a;
   color: white;
   justify-content: center;
 }
-
-.copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 5px;
+.text_footer {
+  font-size: 0.6em;
+  margin: 0;
   padding-bottom: 5px;
-  font-weight: 200;
+  text-align: center;
+}
+.link_footer {
+  color: white;
+  font-size: 0.8em;
 }
 
+.footer_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 4px;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
