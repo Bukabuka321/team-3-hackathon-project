@@ -33,7 +33,6 @@
     padding-bottom: 7px;
     padding-left: 10px;
     width: 100%;
-    font-size: 1em;
 }
 
 .bookingInfoBox {
@@ -59,7 +58,7 @@
     align-items: center;
     justify-content: center;
     justify-self: flex-end;
-    background-color: rgba(23, 32, 240, 1);
+    background-color: #02578b;
     color: white;
     border-radius: 10px;
     border-width: 1px;
@@ -69,5 +68,4 @@
     margin-top: 2px;
     margin-left: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 0.8em;
 }

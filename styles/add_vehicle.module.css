@@ -47,7 +47,7 @@
 
 
 .addBtn {
-    background-color: rgba(23, 32, 240, 1);
+    background-color: #00416a;
     color: white; 
     font-size: 0.8em;
     border-radius: 10px;
@@ -60,7 +60,7 @@
 }
 
 .deleteBtn {
-    background-color: rgba(23, 32, 240, 1);
+    background-color: #00416a;
     color: white;
     font-size: 0.8em;
     border-radius: 10px;

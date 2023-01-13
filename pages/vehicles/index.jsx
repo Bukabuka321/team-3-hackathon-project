@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../../styles/VehiclesPage.module.css";
 import SearchFormShort from "../../components/searchFormShort";
 import Reviews from "../../components/reviews";
+import ShortCarCard from "../../components/shortCarCard";
 
 export default function VehiclesPage() {
     return (
@@ -13,18 +14,18 @@ export default function VehiclesPage() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <h4 style={{ fontWeight: "400", fontSize: "1.2em" }}>Hello, User name! </h4>
+                <h4 style={{ fontWeight: "400", fontSize: "1.2em" }}>Hello! </h4>
                 <h4 style={{ fontWeight: "400", fontSize: "1em" }}>Choose your vehicle.</h4>
                 <div className={styles.buttonHolder}>
                     <button className={styles.btn}>car</button>
                     <button className={styles.btn}>motorbike</button>
                     <button className={styles.btn}>truck</button>
                 </div>
+                <div className={styles.cardHolder}>
                 <SearchFormShort />
-                {/*
                  <ShortCarCard />
-                */}
                 <Reviews />
+                </div>
             </main>
         </>
 
